@@ -1,0 +1,25 @@
+{
+  "name": "pruebasass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss styles/scss/style.scss styles/css/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/strike-33/Meta-coder-.git"
+  },
+  "author": "Juan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/strike-33/Meta-coder-/issues"
+  },
+  "homepage": "https://github.com/strike-33/Meta-coder-#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.15"
+  }
+}

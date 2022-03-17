@@ -1,0 +1,226 @@
+
+
+body{
+height: 100%;
+
+
+
+}
+
+/*header{
+    top: 0px;
+    background-color:#008183  ;
+    height: 150px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+*/
+
+
+/* modificacion de la navbar y sus botones*/
+
+nav {
+    position: relative;
+    bottom: 100px;
+    margin-left: 70%;
+
+}
+
+.logo{
+    padding: 10px;
+    width: 100px;
+    
+    
+}
+
+
+.botones a, li{
+    text-decoration: none;
+    font-size: 20px;
+    font-family:  Georgia, serif; 
+    margin-left: 16px;
+    color: black;
+    list-style-type: none;
+    display: inline;
+   
+}
+
+
+
+/* Modificacion del footer*/
+
+footer{
+margin-top: 50px;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background-color:#008183 ;
+ }
+
+ .footer-logo{
+    width: 100px;
+    margin-left: 40px;
+
+}
+
+.copyright{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+/* seteo el posicionamiento del baner y demas imagenes y textos ubicados en el main  */
+.main img{
+width: 100%;
+float: left;
+}
+
+.nosotros{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+}
+
+.nosotros img{
+    width: 290px;
+    height: 385px;
+}
+
+
+/*delimito el tamano, posicionamiento y selecciono el color de fondo del recuadro de el login*/ 
+#log-in{
+    width: 320px;
+    height: 420px;
+    margin-left: 50%;
+    margin-top: 273px;
+    background: #008183;
+    color: #fff;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+/* seteo que todos los P de los tres divs sean iguales */
+#log-in p,
+#contacto p,
+#register p{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+/*configuro que el label de las tres areas sean iguales */
+#log-in label,
+#contacto label,
+#register label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+/*cofiguro el tamano de los input y de los botones*/
+#log-in input, button,
+#contacto input,button,
+#register input,button{
+    width: 100%;
+    margin-bottom: 20px;
+}
+    /*defino los colores y atributos de cada input*/
+#log-in input[type="text"], 
+#log-in input[type="password"],
+#log-in input[type="email"],
+#contacto input[type="text"], 
+#contacto input[type="password"],
+#contacto input[type="email"],
+#register input[type="text"], 
+#register input[type="password"],
+#register input[type="email"] {
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+  }
+    /*configuro los colores y atributos de los botones de submit*/
+ #log-in button[type="submit"],
+ #contacto button[type="submit"],
+ #register button[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+  }
+/*seteo la config de los a de cada seccion*/
+  #log-in a,
+  #contacto a,
+  #register a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: white;
+    margin-left: 42%;
+  }
+
+  /*defino el area y sus colores de el div de contacto */
+  #contacto{
+    width: 370px;
+    height: 545px;
+    margin-left: 40%;
+    background: #008183;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-bottom: 100px;
+  }
+
+  /*defino el tamano del area donde se va a escribir la consulta */
+#contacto textarea{
+    width: 310px;
+    height: 100px;
+}
+
+/*defino el area ,colores de fondo de fondo y posicionamiento del div register */
+#register{
+    width: 370px;
+    height: 590px;
+    margin-left: 40%;
+    background: #008183;
+    color: #fff;
+    box-sizing: border-box;
+    padding: 70px 30px;
+    margin-bottom: 100px;
+}
+
+/*coloco flexbox en el div padre producto para los hijos*/
+
+.productos{
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+.items{
+    display: inline-block;
+   margin-right: 15px;
+}
+
+body h1{
+margin-left: 43%;
+}
+
+
+
+  

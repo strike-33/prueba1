@@ -1,70 +1,120 @@
 <!DOCTYPE html>
 <html lan="es-AR"> 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="assets/img/Favicon.png">
+	<meta charset="UTF-8">
+  <meta name="description" content="MetaPc es una pagina la cual vende componentes de pc y brinda servicio tecnico especializado">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="assets/img/Favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Meta Gaming </title>
-  <link rel="stylesheet" type="text/css" href="styles/estilos.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="styles/css/styles.css">
+  <title>MetaPC </title>
 </head>
   <!--Nav bar y header -->
-<body>
-  <div class="gridContainer">
-<header class="border">
+
+  <body>
   
-  <nav>
-      <ul class="navFlex">
-          <li class="botones1 transition"><a href="pages/login.html"style="color: black; font-family: Georgia, serif ; text-decoration: none" >Log In</a></li>
-          <li class="botones2 transition"><a href="pages/register.html" style="color: black; font-family: Georgia, serif; text-decoration: none">Register</a></li>
-          <li class="botones3 transition"><a href="pages/productos.html"style="color: black; font-family: Georgia, serif; text-decoration: none">Productos</a></li>
-          <li class="botones4 transition"><a href="pages/contacto.html"style="color: black; font-family: Georgia, serif; text-decoration: none">Contacto</a></li>
-        </ul>
-  </nav>
-</header>
-<section class="logobotn border"><a href="index.html"><img class="logo animacion2" src="assets/img/logo.png"></a></section>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+
+			  <a class="navbar-brand" href="index.html">Meta Gaming</a>
+			  <!-- Aqui se determina la caracteristica responsive del menu -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav ml-auto">
+
+
+						  <!-- Segundo Elemento -->
+					      <li class="nav-item">
+					        <a class="nav-link" href="pages/productos.html">Productos</a>
+
+					      </li>
+
+					        <!-- Cuarto elemento -->
+					      <li class="nav-item dropdown">
+					        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                </li>
+					         
+					       <!-- Tercer Elemento, Desplegable -->
+                 <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingresar</a>
+					      <!-- Elementos Desplegables -->
+					        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          		<a class="dropdown-item" href="pages/login.html">Login</a>
+					          		<a class="dropdown-item" href="pages/register.html">Registrarse</a>
+								</div>
+					      </li>
+
+
+					    </ul>
+				</div>
+			</div>
+				</nav>
 
     <!--Informacion sobre la tienda en homepage-->
 
   <section class="encabezado ">
-<img src="assets/img/banner2.jpg">
+<img src="assets/img/banner2.jpg" class="img-fluid" alt="Responsive image">
 </section>
 
-<section class="imageninfo">
- <img class="translate animacion" src="assets/img/1.jpg"  >
- </section>
+<div class="container marketing">
 
-<section class="textoinfo">
-  <p>
-    ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ea modi voluptas unde quam voluptatibus iste repellat, omnis magnam non magni maxime. Amet, harum expedita facilis soluta corporis commodi?ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ea modi voluptas unde quam voluptatibus iste repellat, omnis magnam non magni maxime. Amet, harum expedita facilis soluta corporis commodi?ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ea modi voluptas unde quam voluptatibus iste repellat, omnis magnam non magni maxime. Amet, harum expedita facilis soluta corporis commodi?ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui ea modi voluptas unde quam voluptatibus iste repellat, omnis magnam non magni maxime. Amet, harum expedita facilis soluta corporis commodi?
- </p>
-</section>
+  <hr class="featurette-divider">
 
-
-  
-    <!--Pie de pagina-->
-
-<footer class="border">
-    <div>
-      <a target="_blank" href="https://facebook.com"><img class="footer-logo" src="assets/img/Facebook.ico" ></img></a>
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Quienes Somos <span class="text-muted"> Y Nuestra Historia</span></h2>
+      <p class="lead">Somos una empresa Fundada en 2020 a la cual a meses de haberse fundado,la agarro una pandemia de por medio. Esta nosotros la utilizamos como un impulso para crecer a nivel nacional ya que en cualquier parte del pais en la que te encontraras te solicitaban una pc ,como requisito minimo, para trabajar,estudiar,etc. Por lo que nos pusimos manos a la obra y con mucho trabajo, 2 Anos despues, contamos con mas de 10 empleados y con +100 pedidos diarios los cuales se entregan/envian 48/72 Hrs despues de efectuarse la compra.
+      </p>
     </div>
-    <div>
-      <a target="_blank" href="https://twitter.com/" style="right:10;"><img class="footer-logo" src="assets/img/Twitter.ico"></img></a>
+    <div class="col-md-5">
+      <img src="assets/img/negocio1.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
     </div>
-    <div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Fotos De nuestro Local <span class="text-muted">Y MAS</span></h2>
+      <p class="lead">En nuestra empresa tenemos un servicio tecnico especializado el cual te ayudara a armar tu pc segun las necesidades que tengas y el presupuesto disponible!!! Tambien podras armar tu build custom si es que ya sabes que es lo que queres y al final el nuestros tecnicos revisaran que todo sea compatible entre si!</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="assets/img/negocio2.png" class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500">
+    </div>
+  </div>
+<hr class="featurette-divider">
+
+
+
+
+
+
+</div>
+
+
+	
+  	<!--Pie de pagina-->
+
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Meta Gaming 2022</p>
+      <div class="botonesfooter">
+      <a target="_blank" href="https://facebook.com"><img class="footer-logo" src="assets/img/Facebook.ico"></img></a>
+      <a target="_blank" href="https://twitter.com/"><img class="footer-logo" src="assets/img/Twitter.ico"></img></a>
       <a target="_blank" href="https://instagram.com"><img class="footer-logo" src="assets/img/instagram.ico"></img></a></a>
+    </div>
     </div>
 
 </footer>
 
-
-  </div>
-  <div class="copyright">
-    <p >Copyright &copy; Meta Gaming 2018</p>
-  </div>
   <script src="js/wow.min.js"></script>
-    <script>
-       new WOW().init();
-    </script>
+    <script> new WOW().init();</script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>

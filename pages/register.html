@@ -3,61 +3,141 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="shortcut icon" href="assets/img/Favicon.png">
-	<title>Meta Gaming </title>
-  <link rel="stylesheet" type="text/css" href="../styles/estilos.css">
+	<link rel="shortcut icon" href="../assets/img/Favicon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<title>Registrate</title>
+  <link rel="stylesheet" type="text/css" href="../styles/css/styles.css">
 </head>
-<body>
-      <!--Nav bar y header -->
-<header>
-    <a href="../index.html"><img class="logo" src="../assets/img/logo.png"></a>
-<nav>
-    <ul>
-        <li class="botones"><a href="login.html" >Log In</a></li>
-        <li class="botones"><a href="register.html" >Register</a></li>
-        <li class="botones"><a href="productos.html">Productos</a></li>
-        <li class="botones"><a href="contacto.html">Contacto</a></li>
-    </ul>
-</nav>
-</header>
+  <!--Nav bar y header -->
+
+  <body>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+			<div class="container">
+
+			  <a class="navbar-brand" href="../index.html">Meta Gaming</a>
+			  <!-- Aqui se determina la caracteristica responsive del menu -->
+			  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			    <span class="navbar-toggler-icon"></span>
+			  </button>
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+					    <ul class="navbar-nav ml-auto">
+
+
+						  <!-- Segundo Elemento -->
+					      <li class="nav-item">
+					        <a class="nav-link" href="productos.html">Productos</a>
+
+					      </li>
+
+					        <!-- Cuarto elemento -->
+					      <li class="nav-item dropdown">
+					        <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+					         
+					       <!-- Tercer Elemento, Desplegable -->
+                 <li class="nav-item dropdown">
+					        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingresar</a>
+					      <!-- Elementos Desplegables -->
+					        	<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					          		<a class="dropdown-item" href="login.html">Login</a>
+					          		<a class="dropdown-item" href="register.html">Registrarse</a>
+								</div>
+					      </li>
+            
+
+
+					    </ul>
+				</div>
+			</div>
+				</nav>
 
         <!--Formulario de registro-->
 
-<div id="register">
-    <article>
-        <form action="#">
-            <p>Register</p>
-            <label>Nombre</label>
-            <input type="text" placeholder="Nombre completo"><br>
-            <label>Apellido</label>
-            <input type="text" placeholder="Apellido"><br>
-            <label for="email">Email
-                <input type="email" placeholder="Inserte correo electronico" name="email"><br>
-            </label>
-            <label>Password</label>
-            <input type="password" placeholder="Password"><br>
-            <label>Repeat password</label>
-            <input type="password" placeholder="Password"><br>
-            <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
-        </form>
-    </article>
-</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-sm">
+                        <form class="bg-dark form-horizontal" method="post">
+                            <fieldset>
+                                <legend class="text-center header">Registrate</legend>
+        
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="email" name="email" type="text" placeholder="Direccion de mail" class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="password" name="password" type="text" placeholder="Contrasena" class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="form-group texto">
+                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                                    <div class="col-md-8">
+                                        <input id="password" name="password" type="text" placeholder="Repita su Contrasena" class="form-control">
+                                    </div>
+                                </div>
+    
+        
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn btn-primary btn-lg">Registrarse</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 		<!--Pie de pagina-->
-<footer>
-    <div class="container">
 
-        <tr>
-            <th> <a target="_blank" href="https://facebook.com"><img class="footer-logo" src="../assets/img/Facebook.ico" ></img></a> </th>
-            <th> <a target="_blank" href="https://twitter.com/"><img class="footer-logo" src="../assets/img/Twitter.ico"></img></a></th>
-            <th> <a target="_blank" href="https://instagram.com"><img class="footer-logo" src="../assets/img/instagram.ico"></img></a> </th>
-          
-        </tr>
-       
-
-    </div>
-    <p class="copyright">Copyright &copy; Meta Gaming 2018</p>
-
-</footer>
-</body>
-</html>
+        <footer class="py-5 bg-dark footerregister">
+            <div class="container">
+              <p class="m-0 text-center text-white">Copyright &copy; Meta Gaming 2022</p>
+            <div class="botonesfooter">
+            <a target="_blank" href="https://facebook.com"><img class="footer-logo" src="../assets/img/Facebook.ico"></img></a>
+            <a target="_blank" href="https://twitter.com/"><img class="footer-logo" src="../assets/img/Twitter.ico"></img></a>
+            <a target="_blank" href="https://instagram.com"><img class="footer-logo" src="../assets/img/instagram.ico"></img></a></a>
+          </div>
+          </div>
+      
+      </footer>
+      
+        <script src="js/wow.min.js"></script>
+          <script>
+             new WOW().init();
+          </script>
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+              <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+              <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+      </body>
+      </html>

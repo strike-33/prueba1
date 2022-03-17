@@ -1,0 +1,520 @@
+.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"logobtn header"
+	"encabezado encabezado"
+	"imageninfo textoinfo"
+	"footer footer";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 300px;
+	
+}
+header{
+	grid-area: header;
+	display: flex;
+    justify-content: flex-end;
+    background-color: #008183;
+}
+header img {
+	padding: 10px;
+    width: 100%;
+}
+nav{
+    margin-right: 25px;
+}
+nav ul {
+	display: flex;
+
+}
+nav img{
+    width: 52px
+    
+}
+
+nav ul li {
+	padding: 10px;
+	font-size: 20p;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+    justify-content: flex-end;
+margin-right: 10px;
+}
+section.encabezado{
+	grid-area: encabezado;
+}
+
+section.imageninfo{
+	grid-area: imageninfo;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+section.textoinfo{
+	grid-area: textoinfo;
+    margin-top: 55px;
+    width: 90%;
+    margin-top: 30px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 40px;
+    width: 100%;
+    height: 170px ;
+    margin-top: 100px;
+background-color: #008183;
+}
+.border{
+	border: 1px solid black;
+}
+.encabezado img{
+    width: 100%;
+}
+
+footer img{
+    width: 100px;
+    margin-left: 40px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.logo{
+    width: 80px;
+    margin-left: 10px;
+}
+
+section.logobotn{
+    background-color: #008183;
+}
+
+.gridContainer2{
+	display: grid;
+	grid-template-areas: 
+	"logobtn header "
+	"encabezado encabezado "
+    "items1 items2"
+    "items3 items4"
+	"footer footer ";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 300px;
+	
+}
+section.items1{
+    grid-area: items1; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+section.items2{
+    grid-area: items2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+
+}
+section.items3{
+    grid-area: items3; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+section.items4{
+    grid-area: items4; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 130px;
+}
+
+.productos{
+display: flex;
+justify-content: center;
+}
+
+.encabezado {
+    display: flex;
+justify-content: center; 
+}  
+
+.footer2{
+    margin-top: 200px;
+}
+
+.transition{
+	background-color: #008183;
+	color: black;
+	transition: all 10s;
+}
+
+.transition:hover{
+	background-color: blue;
+	color: white;
+}
+
+.animacion{
+	animation-name: animacionImg;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+.animacion2{
+	animation-name: animacionImg;
+	animation-iteration-count: 2;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes animacionImg {
+	0%{
+		transform: translateY(-50px);
+	}
+	25%{
+		transform: translateX(50px);
+	}
+	50%{
+		transform: scale(2,2);
+	}
+	75%{
+		transform: skew(20deg, 20deg);
+	}
+	100%{
+		transform: translateX(0px);
+	}
+}
+
+
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width:1240px){
+	.encabezado{
+		font-size: 50px;
+		text-align: center;
+		color: blue;
+	}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1239px){
+	.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"logobtn header"
+	"encabezado encabezado"
+	"imageninfo textoinfo"
+	"footer footer";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 400px;
+
+}
+header{
+	grid-area: header;
+	display: flex;
+    justify-content: center;
+}
+header img {
+	padding: 10px;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	padding: 10px;
+	font-size: 20p;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+}
+section.encabezado{
+	grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section.imageninfo{
+	grid-area: imageninfo;
+    display: flex;
+    justify-content: center; 
+
+}
+
+section.textoinfo{
+	grid-area: textoinfo;
+    display: flex;
+    justify-content: center;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+.border{
+	border: 1px solid black;
+}
+}
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px){
+	.gridContainer{
+	display: grid;
+	grid-template-areas: 
+	"logobtn"
+    "header"
+	"encabezado"
+	"imageninfo"
+	"textoinfo"
+	"footer ";
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 1fr auto 400px auto;
+
+}
+
+header{
+	grid-area: header;
+	display: flex;
+    justify-content: center;
+}
+header img {
+	padding: 10px;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	padding: 10px;
+	font-size: 20p;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+}
+section.encabezado{
+	grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+section.imageninfo{
+	grid-area: imageninfo;
+    display: flex;
+    justify-content: center;
+}
+
+section.textoinfo{
+	grid-area: textoinfo;
+    display: flex;
+    justify-content: center;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px; 
+}
+.border{
+	border: 1px solid black;
+}
+.encabezado{
+		text-align: left;
+		
+	}
+.logobotn{
+    display: flex;
+    justify-content: center;
+}
+}
+
+
+
+
+/*Media queries de la pagina productos */
+
+
+
+
+
+@media only screen and (min-width:1240px){
+	.encabezado{
+		font-size: 50px;
+		text-align: center;
+		color: blue;
+	}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1239px){
+	.gridContainer2{
+	display: grid;
+	grid-template-areas: 
+	"logobtn header"
+	"encabezado encabezado"
+	"items1 items2"
+    "items3 items4"
+	"footer footer";
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 100px 1fr auto 400px;
+
+}
+header{
+	grid-area: header;
+	display: flex;
+    justify-content: center;
+}
+header img {
+	padding: 10px;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	padding: 10px;
+	font-size: 20p;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+}
+section.encabezado{
+	grid-area: encabezado;
+}
+
+section.items1{
+	grid-area: items1;
+    display: flex;
+    justify-content: center;
+}
+
+section.items2{
+	grid-area: items2;
+    display: flex;
+    justify-content: center;
+}
+section.items3{
+	grid-area: items3;
+    display: flex;
+    justify-content: center;
+}
+section.items4{
+	grid-area: items4;
+    display: flex;
+    justify-content: center;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px;
+}
+.border{
+	border: 1px solid black;
+}
+}
+/*vista mobile*/
+@media only screen and (min-width:0px) and (max-width:767px){
+	.gridContainer2{
+	display: grid;
+	grid-template-areas: 
+	"logobtn"
+    "header"
+    "encabezado"
+	"items1"
+	"items2"
+	"items3"
+    "items4"
+	"footer ";
+	grid-template-columns: 100%;
+	grid-template-rows: 100px 1fr auto 400px auto;
+}
+
+header{
+	grid-area: header;
+	display: flex;
+    justify-content: center;
+}
+header img {
+	padding: 10px;
+}
+nav ul {
+	display: flex;
+}
+nav ul li {
+	padding: 10px;
+	font-size: 20p;
+	list-style-type: none;
+	position: relative;
+	top: 20px;
+}
+section.encabezado{
+	grid-area: encabezado;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+
+section.items1{
+	grid-area: items1;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+section.item2{
+	grid-area: items2;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section.items3{
+	grid-area: items3;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+section.items4{
+	grid-area: items4;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+footer{
+	grid-area: footer;
+	display: flex;
+	justify-content: space-around;
+	padding-top: 20px; 
+}
+.border{
+	border: 1px solid black;
+}
+.encabezado{
+		text-align: left;
+		
+	}
+.logobotn{
+    display: flex;
+    justify-content: center;
+}
+}
