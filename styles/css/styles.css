@@ -6,20 +6,19 @@ body {
 
 footer {
   width: 100%; }
-  footer .container .botonesfooter, footer .container legend {
-    align-items: center;
-    display: flex;
-    justify-content: center; }
-  footer .container .footer-logo {
-    width: 80px;
-    height: 80px;
-    margin-left: 30px;
-    margin-top: 30px; }
   footer .container h1 {
     align-items: center;
     display: flex;
     justify-content: center;
     margin-top: 40px; }
+  footer .container hr {
+    width: 125px;
+    height: 2px; }
+  footer .container i {
+    width: 30px; }
+  footer .blanco {
+    color: white;
+    margin-top: 15px; }
 
 .formulario {
   margin-top: 200px; }
@@ -32,6 +31,9 @@ fieldset {
   width: 100%; }
 
 legend {
+  align-items: center;
+  display: flex;
+  justify-content: center;
   color: white; }
 
 @media (min-width: 768px) {
@@ -63,3 +65,11 @@ iframe {
     position: fixed;
     bottom: 0;
     width: 100%; } }
+
+.productos p {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  font-family: Lato, sans-serif;
+  text-decoration: none; }

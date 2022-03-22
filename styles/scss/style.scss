@@ -26,20 +26,23 @@ body{
  footer{
     width: $Fullsize;
      .container{
-         .botonesfooter{   
-            @include center;
-        }
-         .footer-logo{
-                width: 80px;
-                height: 80px;
-                margin-left: 30px;
-                margin-top: 30px;}
           h1{
             @include center;
             margin-top: 40px;
           }
+          hr{
+            width: 125px; 
+            height: 2px;
+          }
+          i{
+              width: 30px;
+          }
+          }
+          .blanco{
+              color: white;
+              margin-top: 15px;
+          }
          
-     }
  }
 
 
@@ -58,7 +61,7 @@ width: $Fullsize;
 }
 
 legend{
-  @extend .botonesfooter;
+    @include center;
   color: white;
   
 }
@@ -104,5 +107,17 @@ iframe{
         width: map-get($estilos , largo );
     }
 }
+
+.productos{
+            p{
+                display: flex;
+                justify-content: center;
+                text-decoration: none;
+                 color: black;
+                 font-family: Lato, sans-serif; 
+                 text-decoration: none
+            }
+}
+
 
 
